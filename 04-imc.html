@@ -1,0 +1,11 @@
+<meta charset="utf-8">
+<h1>Calcule seu IMC</h1>
+
+<script>
+
+    var peso = parseFloat(prompt("Informe seu peso:").replace(",", "."))
+    var altura = parseFloat(prompt("Informe sua altura:").replace(",", "."))
+    var imc = peso / altura ** 2
+    document.write("Seu IMC é: " + imc.toFixed(1).replace(".", ","))
+
+</script>

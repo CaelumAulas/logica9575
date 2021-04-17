@@ -1,0 +1,21 @@
+Crie um algoritmo para realizar o cadastro de um usuário. Peça para o usuário informar os seguintes dados: nome, sobrenome, email e ano de nascimento.
+
+Exiba na tela as informações coletadas da forma abaixo:
+
+    Seus dados são:
+
+    Nome completo: [NOME E SOBRENOME DO CARA]
+    E-mail: [EMAIL DO CARA]
+    Idade: [IDADE DO CARA] anos
+
+    Obrigado por se cadastrar em nosso site!
+
+------------------------------------------------
+
+Passo a passo:
+    1) Coletar o nome e guardar em memoria
+    2) Coletar o sobrenome e guardar em memoria 
+    3) Coletar o email e guardar em memoria 
+    4) Coletar o ano de nascimento (Integer)
+    5) Calcular a idade do cara e guardar em memoria 
+    6) Exibir os dados na tela conforme o exemplo

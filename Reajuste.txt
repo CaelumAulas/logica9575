@@ -1,0 +1,6 @@
+Crie um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste.
+
+Calcular e exibir o valor do novo salário. (Considerar o percentual de reajuste sempre um número inteiro: 5%, 10%, etc.)
+
+    
+    

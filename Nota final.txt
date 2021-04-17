@@ -1,0 +1,5 @@
+Crie um algoritmo que receba 3 notas de um aluno e exiba a média ponderada final dele segundo a fórmula abaixo:
+
+    media = ((nota1 * 2) + (nota2 * 3) + (nota3 * 5)) / 10
+
+    A sua média final é: X.X

@@ -1,0 +1,10 @@
+Crie um algoritmo que peça para o usuário informar um produto, seu preço e o valor do desconto em reais. Calcule e exiba as informações abaixo:
+
+    Produto: [NOME DO PRODUTO]
+    Preço Original: R$ [PREÇO ORIGINAL COM 2 CASAS DECIMAIS]
+    Desconto Aplicado: R$ [VALOR DO DESCONTO COM 2 CASAS DECIMAIS]
+    Preço final: R$ [PREÇO FINAL DO PRODUTO JÁ COM O DESCONTO 2 CASAS DECIMAIS]
+
+Dica:
+    a) Não se esqueça de converter os valores necessários
+    b) Não se esqueça que o usuário pode informar os preços com vírgula

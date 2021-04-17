@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<h1>Reajuste Salarial</h1>
+
+<script>
+
+    var salario = parseFloat(prompt('Informe o valor do salário:').replace(',', '.'))
+    var reajuste = parseInt(prompt('Informe o percentual de reajuste:'))
+    var aumento = reajuste/100 * salario
+    var salarioFinal = salario + aumento
+
+    document.write('O seu salário final é: R$ ' + salarioFinal.toFixed(2).replace('.', ','))
+
+</script>

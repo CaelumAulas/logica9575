@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<h1>Produto com Desconto</h1>
+<script>
+
+    var produto = prompt('Informe o produto:')
+    var preco = parseFloat(prompt('Informe o preço do produto:').replace(',', '.'))
+    var desconto = parseFloat(prompt('Informe o valor do desconto:').replace(',', '.'))
+    var precoFinal = preco - desconto
+
+    document.write(`
+        Produto: ${produto} <br>
+        Preço Original: R$ ${preco.toFixed(2).replace('.', ',')}<br>
+        Desconto Aplicado: R$ ${desconto.toFixed(2).replace('.', ',')}<br>
+        Preço Final: R$ ${precoFinal.toFixed(2).replace('.', ',')} 
+    `)
+
+
+</script>

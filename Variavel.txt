@@ -1,0 +1,34 @@
+Variável: é um espaço na memória que guarda um dado simples.
+
+Nomes de variáveis precisam seguir 3 regras:
+    1) A-Z, _ (underscore) ou $ (cifrão)
+    2) Pode ter números
+    3) Não pode ter como primeiro caracter um número
+
+
+    Nomes válidos:
+        minhaIdade
+        preco2
+        $nome_completo
+        _meu_sobrenome
+
+    Nomes INVÁLIDOS:
+        minha idade 
+        preco-2
+        %nomeCompleto 
+        6macas
+
+-------------------------------------------------
+
+camelCase
+PascalCase
+snake_case
+
+------------------------------------------------
+
+João = 1991
+Maria = 1987
+Marcio = 1963
+
+
+A média das idades é: X

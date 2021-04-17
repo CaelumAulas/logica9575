@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<h1>Cadastro simples</h1>
+<script>
+
+    var nome = prompt('Informe seu primeiro nome:')
+    var sobrenome = prompt('Informe seu sobrenome:')
+    var email = prompt('Informe seu e-mail:')
+    var ano = parseInt(prompt('Informe seu ano de nascimento:'))
+    var anoAtual = new Date().getFullYear()
+    var idade = anoAtual - ano
+
+    document.write(`
+        Seus dados são: <br><br>
+
+        Nome completo: ${nome} ${sobrenome} <br>
+        E-mail: ${email} <br>
+        Idade: ${idade} anos <br><br>
+
+        Obrigado por se cadastrar em nosso site!
+    `)
+
+</script>
