@@ -1,0 +1,51 @@
+<meta charset="utf-8">
+<h1>Uber vs Carro</h1>
+
+<h2>Carro</h2>
+
+<script src="js/pegaNumero.js"></script>
+<script src="js/formataMoeda.js"></script>
+
+<script>
+
+    var distancia = pegaFloat('Distância em KM:')
+    var autonomia = pegaFloat('Autonomia (KM/litro):')
+    var precoGasolina = pegaFloat('Preço da Gasolina:')
+    var precoEst = pegaFloat('Preço do Estacionamento:')
+
+    // gasto com gasolina
+    var gastoGasolina = distancia / autonomia * precoGasolina
+    // total da viagem
+    var totalCarro = gastoGasolina + precoEst
+
+    document.write(`
+        Preço da Gasolina: ${formataMoeda(precoGasolina)} <br>
+        Valor gasto com Gasolina: ${formataMoeda(gastoGasolina)} <br>
+        Preço do Estacionamento: ${formataMoeda(precoEst)} <br>
+        Total da Viagem com Carro: ${formataMoeda(totalCarro)}
+    `)
+
+</script>
+
+<h2>Uber</h2>
+<script>
+
+    const PRECO_BASE = 2.75
+    const VELOCIDADE_MEDIA = 25
+    const PRECO_MINUTO = 0.26
+    const PRECO_KM = 1.40
+
+    // Gasto com os KM rodados
+    var gastoKmRodados = distancia * PRECO_KM
+
+    // Gasto com o tempo da viagem
+    var tempoEmHoras = distancia / VELOCIDADE_MEDIA
+    var tempoEmMinutos = tempoEmHoras * 60
+    var gastoTempo = tempoEmMinutos * PRECO_MINUTO
+
+    // Total da viagem de Uber
+    var totalUber = gastoTempo + gastoKmRodados + PRECO_BASE
+
+    document.write(`Total da Viagem com Uber: ${formataMoeda(totalUber)}`)
+
+</script>

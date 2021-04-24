@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<h1>Formulário Produto</h1>
+
+<p>
+    Nome do Produto: <br>
+    <input type="text" id="campoProduto">
+</p>
+
+<p>
+    Valor Unitário: <br>
+    <input type="number" id="campoValorUnit">
+</p>
+
+<p>
+    Quantidade comprada: <br>
+    <input type="number" id="campoQtd">
+</p>
+
+<button onclick="calcularTotal()">
+    Calcular Total
+</button>
+
+<script src="js/formataMoeda.js"></script>
+<script>
+
+    function calcularTotal()
+    {
+        var nome = campoProduto.value
+        var valorUnit = campoValorUnit.valueAsNumber 
+        var qtd = campoQtd.valueAsNumber 
+        var total = valorUnit * qtd 
+
+        document.write(`
+            Nome do Produto: ${nome} <br>
+            Total da Compra: ${formataMoeda(total)}
+        `)
+    }
+
+</script>

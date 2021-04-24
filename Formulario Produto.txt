@@ -1,0 +1,1 @@
+Crie um formulário com os campos Nome do produto, Valor unitário e quantidade comprada. Ao clicar no botão "Calcular", colete as informações dos campos e exiba o valor final da compra e o nome do produto na tela.

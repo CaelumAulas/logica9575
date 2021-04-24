@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<h1>Revendedora | Salário do Vendedor</h1>
+<script>
+
+    var salarioFixo = parseFloat(prompt('Salário fixo:').replace(',', '.'))
+    var totalVendas = parseFloat(prompt('Total das vendas:').replace(',', '.'))
+    var comissaoCarro = parseFloat(prompt('Comissão por carro vendido:').replace(',', '.'))
+    var carrosVendidos = parseInt(prompt('Carros vendidos:'))
+
+    // comissão 1: Comissão recebida pelos carros vendidos
+    var comissao1 = carrosVendidos * comissaoCarro
+
+    // comissão 2: 5% sobre o total das vendas
+    var comissao2 = totalVendas * 0.05
+
+    // Salário Final
+    var salarioFinal = salarioFixo + comissao1 + comissao2 
+
+    document.write('Seu salário novo é: R$ ' + salarioFinal.toFixed(2).replace('.', ','))
+
+</script>

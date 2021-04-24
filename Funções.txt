@@ -1,0 +1,31 @@
+Função: serve para guardar uma lógica inteira em memória que pode ser executada quando necessário.
+
+Criação de funções:
+
+    function nomeDaFuncao()
+    {
+        // código da função
+    }
+
+
+Execução de Funções:
+
+    nomeDaFuncao()
+
+
+Como saber se uma função é de retorno ou não?
+
+    Uma função de retorno 99% das vezes está NA FRENTE de uma variável, ou dentro da execução de outra função.
+
+---------------------------------------------
+
+nomeDaFuncao()
+
+    prompt() = retorno / parâmetro
+    toFixed() = parâmetro / retorno
+    replace() = parâmetro / retorno
+    document.write() = parâmetro
+    parseFloat() = parâmetro / retorno 
+    parseInt() = parâmetro / retorno 
+    alert() = parâmetro
+    getFullYear() = retorno / simples

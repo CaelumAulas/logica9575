@@ -1,0 +1,6 @@
+Crie um algoritmo para calcular a área de triângulos. Exiba o resultado do cálculo na tela conforme modelo abaixo:
+
+    A área do triângulo é: X.X m²
+
+Fórmula para cálculo: base x altura / 2
+

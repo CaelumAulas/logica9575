@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<h1>Confeitaria Caelum | Função com Parâmetro</h1>
+
+<button onclick="fazerBolo('Chocolate', 'bolo-chocolate.jpg')">
+    Quero o bolo de Chocolate
+</button>
+
+<button onclick="fazerBolo('Laranja', 'bolo-laranja.jpg')">
+    Quero o bolo de Laranja
+</button>
+
+<button onclick="fazerBolo('Maçã', 'bolo-maca.jpg')">
+    Quero o bolo de Maçã
+</button>
+
+<button onclick="fazerBolo('Morango')">
+    Quero o bolo de Morango
+</button>
+
+<button onclick="fazerBolo('Coco')">
+    Quero o bolo de Coco
+</button>
+
+<script>
+
+    function fazerBolo(sabor, foto = 'sem-foto.jpg')
+    {
+        document.write(`
+            Aqui está seu bolo de ${sabor}... <br>
+            <img src="${foto}" width="200">
+        `)
+    }
+
+</script>

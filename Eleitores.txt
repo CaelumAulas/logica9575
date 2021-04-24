@@ -1,0 +1,7 @@
+Crie um formulário para coletar o número total de eleitores de um município, o número de votos
+brancos e nulos. Calcular e exibir o percentual que cada um representa em relação ao total de eleitores.
+
+    % de votos brancos = X
+    % de votos nulos = Y
+    % de votos válido = Z
+    Total de votos = W

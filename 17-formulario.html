@@ -1,0 +1,64 @@
+<meta charset="utf-8">
+<h1>Academia Caelum</h1>
+<p>
+    Preencha o formulário abaixo para realizar sua inscrição:
+</p>
+
+<p>
+    Nome: <br>
+    <input type="text" id="campoNome">
+</p>
+
+<p>
+    Altura: <br>
+    <input type="number" id="campoAltura">
+</p>
+
+<p>
+    Peso: <br>
+    <input type="number" id="campoPeso">
+</p>
+
+<p>
+    Data de Nascimento: <br>
+    <input type="text" id="campoDataNascimento">
+</p>
+
+<p>
+    <input type="checkbox" id="campoSouCardiaco"> Tenho problemas cardíacos
+</p>
+
+<button onclick="cadastrar()">
+    Cadastrar
+</button>
+
+<!-- Arquivos do Calendário -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js"></script>
+
+<script>
+
+    flatpickr(campoDataNascimento, {
+        locale: 'pt',
+        dateFormat: 'd/m/Y'
+    })
+
+    function cadastrar()
+    {
+        var nome = campoNome.value
+        var altura = campoAltura.valueAsNumber
+        var peso = campoPeso.valueAsNumber
+        var dataNascimento = campoDataNascimento.value 
+
+        document.write(`
+            <h2>Seus dados de cadastro são:</h2>
+
+            <b>Nome:</b> ${nome} <br>
+            <b>Altura:</b> ${altura} m <br>
+            <b>Peso:</b> ${peso} kg <br>
+            <b>Data de Nascimento:</b> ${dataNascimento}
+        `)
+    }
+
+</script>
