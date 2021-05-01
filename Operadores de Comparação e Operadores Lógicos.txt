@@ -1,0 +1,26 @@
+Boolean = (booleano) true/false
+
+OPERADORES DE COMPARAÇÃO
+    == (igualdade)
+    === (igualdade estrita)
+    != (diferença)
+    !== (diferença estrita)
+    > (maior que)
+    < (menor que)
+    >= (maior ou igual a)
+    <= (menor ou igual a)
+
+
+FALSY VALUES: um valor que se transformado em booleano vai ser entendido como FALSE.
+    undefined
+    null
+    0
+    '' (string vazia)
+    NaN (Not a Number)
+    false
+
+
+OPERADORES LÓGICOS
+    && (E) = une condições em que todas as comparações devem ser VERDADEIRAS
+    || (OU) = une condições em que pelo menos uma comparação deve ser VERDADEIRA
+    ! (NOT/NEGAÇÃO) = pergunta se algo é FALSO (se for, ele retorna VERDADEIRO, se não for ele retorna FALSO)

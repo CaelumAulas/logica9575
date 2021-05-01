@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+<h1>Eleitores</h1>
+
+<p>
+    Total de Eleitores:<br>
+    <input type="number" id="campoTotalEleitores">
+</p>
+
+<p>
+    Nº de votos brancos: <br>
+    <input type="number" id="campoVotosBrancos">
+</p>
+
+<p>
+    Nº de votos nulos: <br>
+    <input type="number" id="campoVotosNulos">
+</p>
+
+<button onclick="mostrarPercentuais()">
+    Mostrar Percentuais
+</button>
+
+<script>
+
+    function mostrarPercentuais()
+    {
+        var totalEleitores = parseInt(campoTotalEleitores.valueAsNumber)
+        var totalVotosBrancos = parseInt(campoVotosBrancos.valueAsNumber)
+        var totalVotosNulos = parseInt(campoVotosNulos.valueAsNumber)
+        var totalVotosValidos = totalEleitores - (totalVotosBrancos + totalVotosNulos)
+
+        var percentualBrancos = 100 * totalVotosBrancos / totalEleitores
+        var percentualNulos = 100 * totalVotosNulos / totalEleitores
+        var percentualValidos = 100 * totalVotosValidos / totalEleitores
+
+        document.write(`
+            % de votos brancos = ${percentualBrancos.toFixed(1)}% <br>
+            % de votos nulos = ${percentualNulos.toFixed(1)}% <br>
+            % de votos válido = ${percentualValidos.toFixed(1)}% <br>
+            Total de votos = ${totalEleitores}
+        `)
+    }
+
+</script>

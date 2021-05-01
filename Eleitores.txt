@@ -5,3 +5,7 @@ brancos e nulos. Calcular e exibir o percentual que cada um representa em relaç
     % de votos nulos = Y
     % de votos válido = Z
     Total de votos = W
+
+
+100%      totalEleitores
+X         totalVotosBrancos
