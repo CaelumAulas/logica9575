@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+<h1>Login</h1>
+
+<p>
+    Preencha o formulário abaixo para acessar o sistema:
+</p>
+
+<p>
+    Usuário: <br>
+    <input type="text" id="campoUsuario">
+</p>
+
+<p>
+    Senha: <br>
+    <input type="password" id="campoSenha">
+</p>
+
+<button onclick="entrar()">
+    Entrar
+</button>
+
+<script>
+
+    function entrar()
+    {
+        var usuario = campoUsuario.value
+        var senha = campoSenha.value 
+
+        if (usuario == "caelum" && senha == "wd01") 
+        {
+            document.write('Login realizado com sucesso!')
+        }
+        else 
+        {
+            alert('Usuário ou senha inválidos! Tente novamente!')
+            campoUsuario.value = ''
+            campoSenha.value = ''
+            campoUsuario.focus()
+        }
+    }
+
+</script>

@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<h1>Média de Aproveitamento</h1>
+
+<script src="js/pegaNumero.js"></script>
+<script>
+
+    var n1 = pegaFloat('Nota 1:')
+    var n2 = pegaFloat('Nota 2:')
+    var n3 = pegaFloat('Nota 3:')
+    var media = pegaFloat('Média dos Exercícios:')
+    var media_aproveitamento = (n1 + n2 * 2 + n3 * 3 + media) / 7
+
+    alert('Aproveitamento: ' + media_aproveitamento);
+    
+    if (media_aproveitamento >= 9) {
+        alert('Conceito: A')
+    }
+    else if (media_aproveitamento >= 7.5 && media_aproveitamento < 9) {
+        alert('Conceito: B')
+    }
+    else if (media_aproveitamento >= 6 && media_aproveitamento < 7.5) {
+        alert('Conceito: C')
+    }
+    else {
+        alert('Conceito: D')
+    }
+
+</script>

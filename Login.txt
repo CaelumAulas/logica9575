@@ -1,0 +1,7 @@
+Crie um formulário de login com dois campos: um para usuário e outro para senha.
+Quando o botão do formulário for clicado, pegue as informações dos campos e faça a seguinte
+verificação:
+    SE o usuário for igual a "caelum" E a senha for igual a "wd01"
+        Exiba na tela "Login realizado com sucesso!"
+    CASO CONTRARIO
+        Mostre um alerta "Dados inválidos, tente novamente!"

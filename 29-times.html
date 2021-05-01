@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<h1>Resultado do Jogo</h1>
+
+<script src="js/pegaNumero.js"></script>
+<script>
+
+    var time1 = prompt('Informe o Time 1:')
+    var golsTime1 = pegaInt('Informe os gols do Time 1:')
+    var time2 = prompt('Informe o Time 2:')
+    var golsTime2 = pegaInt('Informe os gols do Time 2:')
+
+    if (golsTime1 == golsTime2) {
+        document.write('Deu Empate!')
+    }
+    else if (golsTime1 > golsTime2) {
+        document.write(`O vencedor é: ${time1}`)
+    }
+    else {
+        document.write(`O vencedor é: ${time2}`)
+    }
+
+</script>

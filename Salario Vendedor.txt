@@ -1,0 +1,10 @@
+Pedir o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que ele recebe uma comissão de 3% sobre o total das vendas até R$ 1.500,00 mais 5% sobre o que ultrapassar este valor, calcular e exibir o seu salário total.
+
+SE total das vendas for menor ou igual a 1500
+    aplicar 3% sobre o valor das vendas 
+    somar o valor calculado da comissão ao salario fixo 
+
+CASO CONTRÁRIO
+    aplicar 3% sobre 1500
+    aplicar 5% sobre a diferença entre o total das vendas e 1500
+    somar o valor calculado da comissao de 3%, o da comissão de 5% e o salario fixo 

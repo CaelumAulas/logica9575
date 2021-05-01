@@ -1,0 +1,56 @@
+<meta charset="utf-8">
+<h1>Total a Pagar</h1>
+
+<p>
+    Nome do Produto: <br>
+    <input type="text" id="campoProduto">
+</p>
+
+<p>
+    Preço Unitário: <br>
+    <input type="number" id="campoPreco">
+</p>
+
+<p>
+    Quantidade: <br>
+    <input type="number" id="campoQtd">
+</p>
+
+<button onclick="calcularTotal()">
+    Calcular Total
+</button>
+
+<script src="js/formataMoeda.js"></script>
+<script>
+
+    function calcularTotal()
+    {
+        var produto = campoProduto.value
+        var preco = campoPreco.valueAsNumber
+        var qtd = campoQtd.valueAsNumber
+
+        var total = preco * qtd 
+
+        if (qtd <= 5) {
+            // 2% de desconto
+            var valorDesconto = total * 0.02
+        }
+        else if (qtd > 5 && qtd <= 10) {
+            // 3% de desconto
+            var valorDesconto = total * 0.03
+        }
+        else {
+            // 5% de desconto
+            var valorDesconto = total * 0.05
+        }
+
+        var totalPagar = total - valorDesconto
+
+        document.write(`
+            Total: ${formataMoeda(total)} <br>
+            Desconto: ${formataMoeda(valorDesconto)} <br>
+            Total a Pagar: ${formataMoeda(totalPagar)}
+        `)
+    }
+
+</script>

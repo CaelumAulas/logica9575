@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<h1>Aprovação</h1>
+
+<script src="js/pegaNumero.js"></script>
+<script>
+
+    var nota1 = pegaFloat('Nota da Avaliação 1:')
+    var nota2 = pegaFloat('Nota da Avaliação 2:')
+    var media = (nota1 + nota2) / 2
+
+    document.write('Sua nota final é: ' + media.toFixed(1) + '<br>')
+
+    if (media >= 6) {
+        document.write('Status: APROVADO <br> <img src="aprovado.jpg">')
+    }
+    else {
+        document.write('Status: REPROVADO <br> <img src="reprovado.jpg">')
+    }
+
+</script>
