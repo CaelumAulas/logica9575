@@ -1,0 +1,11 @@
+Escreva um algoritmo que receba duas informações do usuário: uma palavra qualquer e a quantidade de repetições.
+
+Faça com que a palavra informada seja exibida o número de repetições
+dada pelo usuário.
+
+palavra = GATO
+repeticoes = 3
+
+GATO 
+GATO 
+GATO 

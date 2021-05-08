@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<h1>Contagem</h1>
+
+<script src="js/pegaNumero.js"></script>
+<script>
+
+    var numero = pegaInt('Informe um número maior que zero:')
+    var texto = ''
+
+    while (numero <= 0) {
+        numero = pegaInt('Número inválido! Informe um número maior que zero:')
+    }
+
+    for (var loop = 1; loop <= numero; loop++)
+    {
+        texto += `${loop}...<br>`
+    }
+
+    document.write(`
+        Contando... <br>
+        ${texto}
+        FIM!
+    `)
+
+</script>

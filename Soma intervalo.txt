@@ -1,0 +1,18 @@
+Escreva um algorimo que realize a soma de um intervalo de números com base
+num número inicial e final.
+
+Exiba o resultado da soma na tela.
+
+Ex:
+    soma = 0 (valor inicial é zero)
+    inicio = 5
+    fim = 8
+
+    A soma terá de ser o resultado de 5 + 6 + 7 + 8
+    que é igual a 26
+
+    Exibir:
+
+        Total da soma é: 26
+        Dica:
+            Será necessário usar o operador +=
