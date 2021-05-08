@@ -1,0 +1,73 @@
+<meta charset="utf-8">
+<h1>Loteria</h1>
+
+<button onclick="jogar()">
+    Jogar
+</button>
+
+<script src="js/pegaNumero.js"></script>
+<script src="js/pegaNumeroAleatorio.js"></script>
+<script src="js/mostra.js"></script>
+<script>
+
+    var numeroJogada = 0
+
+    function jogar()
+    {
+        numeroJogada = numeroJogada + 1
+        var listaNumeros = []
+        var numerosAcertados = []
+
+        while (listaNumeros.length < 6)
+        {
+            var numeroMisterioso = pegaNumeroAleatorio(1, 60)
+            if (!listaNumeros.includes(numeroMisterioso)) 
+            {
+                listaNumeros.push(numeroMisterioso)
+            }
+        }
+
+        var chutes = prompt('Informe 6 números separados por vírgula:').split(',')
+
+        for (var i = 0; i <= chutes.length; i++)
+        {
+            var chute = parseInt(chutes[i])
+            if (listaNumeros.includes(chute)) {
+                numerosAcertados.push(chute)
+            }
+        }
+
+        var status = ""
+        if (numerosAcertados.length == 6) {
+            status = "SENA"
+        }
+        else if (numerosAcertados.length == 5) {
+            status = "QUINA"
+        }
+        else if (numerosAcertados.length == 4) {
+            status = "QUADRA"
+        }
+        else if (numerosAcertados.length == 3) {
+            status = "TERNO"
+        }
+        else {
+            status = "N/A"
+        }
+
+        if (numerosAcertados.length < 3) {
+            mostra(`
+                Que pena, você não ganhou dessa vez!<br>
+                Números Acertados: ${numerosAcertados.join(', ')} <br>
+                Números sorteados: ${listaNumeros.join(', ')}
+            `)
+        }
+        else {
+            mostra(`
+                Parabéns, você ganhou no(a) ${status}!<br>
+                Números Acertados: ${numerosAcertados.join(', ')} <br>
+                Números sorteados: ${listaNumeros.join(', ')}
+            `)
+        }
+    }
+
+</script>
