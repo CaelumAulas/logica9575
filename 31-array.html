@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<h1>Arrays</h1>
+
+<script>
+
+    var listaDeCompras = ["Arroz", "Feijão", "Batata", "Óleo", "Cerveja", "Açúcar", "Café"] // Array
+    alert( "O primeiro item da lista é: " + listaDeCompras[0] )
+    alert( "O último item da lista é: " + listaDeCompras[6] )
+
+    document.write(`
+        Minha lista de compras tem <b>${listaDeCompras.length} item(ns)</b>. Eles são: <br>
+        <ol>
+            <li>
+                ${listaDeCompras.join('</li><li>')}
+            </li>
+        </ol>
+    `)
+
+</script>

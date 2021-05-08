@@ -1,0 +1,46 @@
+<meta charset="utf-8">
+<h1>Tabuada</h1>
+
+<p>
+    Informe um número para ver a tabuada correspondente:
+</p>
+
+<p>
+    Número: <br>
+    <input type="number" id="campoNumero" />
+    <button onclick="calcularTabuada()">
+        Ver Tabuada
+    </button>
+</p>
+
+<p id="mostradorTabuada">
+    Sua tabuada será exibida aqui :D 
+</p>
+
+<script>
+
+    function calcularTabuada()
+    {
+        var numero = campoNumero.valueAsNumber
+
+        if (isNaN(numero)) 
+        {
+            alert('Número inválido!');
+        }
+        else 
+        {
+            var multiplicador = 0
+            var textoTabuada = "" 
+
+            while (multiplicador <= 10) 
+            {
+                var resultado = numero * multiplicador
+                textoTabuada += `${numero} x ${multiplicador} = ${resultado} <br>` // atribuição por concatenação
+                multiplicador += 1 // atribuição por soma
+            }
+
+            mostradorTabuada.innerHTML = textoTabuada
+        }
+    }
+
+</script>

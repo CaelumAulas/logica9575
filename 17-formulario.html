@@ -36,6 +36,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js"></script>
+<script src="js/libIdade.js"></script>
 
 <script>
 
@@ -49,7 +50,15 @@
         var nome = campoNome.value
         var altura = campoAltura.valueAsNumber
         var peso = campoPeso.valueAsNumber
-        var dataNascimento = campoDataNascimento.value 
+        var dataNascimento = campoDataNascimento.value // "12/04/1991"
+        var dataPedacos = dataNascimento.split('/') // ["12", "04", "1991"]
+        var idade = calculaIdade( dataPedacos[0], dataPedacos[1], dataPedacos[2] )
+        var souCardiaco = campoSouCardiaco.checked // boolean (true/false)
+        var frase = 'NÃO PRECISA DE ACOMPANHAMENTO MÉDICO'
+
+        if (idade < 14 || souCardiaco == true) {
+            frase = 'PRECISA DE ACOMPANHAMENTO MÉDICO'
+        }
 
         document.write(`
             <h2>Seus dados de cadastro são:</h2>
@@ -57,7 +66,10 @@
             <b>Nome:</b> ${nome} <br>
             <b>Altura:</b> ${altura} m <br>
             <b>Peso:</b> ${peso} kg <br>
-            <b>Data de Nascimento:</b> ${dataNascimento}
+            <b>Data de Nascimento:</b> ${dataNascimento} <br>
+            <b>Idade:</b> ${idade} anos <br>
+            <hr>
+            ${frase}
         `)
     }
 
